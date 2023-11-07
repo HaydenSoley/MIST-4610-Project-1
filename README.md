@@ -5,11 +5,11 @@
 Group 10
 
 # Team Memebers:
-1. Liam Kilner @liamkilner
-2. Ashley Potts @ashley-potts
-3. Hayden Soley @HaydenSoley
-4. Emma Surbrook @emmasurbrook
-5. Victoria Wiest @victoriawiest
+1. Liam Kilner https://github.com/liamkilner/Project-1-SQL
+2. Ashley Potts https://github.com/ashley-potts/MIST-4610-Project1 
+3. Emma Surbrook https://github.com/emmasurbrook/MIST-Project 
+4. Hayden Soley https://github.com/HaydenSoley/MIST-4610-Project-1
+5. Victoria Wiest https://github.com/victoriawiest/MIST4610Project1
 
 # Problem Description:
 Pretend you are the owner/operator of a tennis (or football, soccer - your choice) club needing to build a relational database. You hired some students from the MIST 4610 class at the University of Georgia to create the database for you. They need to know more about your organization to identify which entities, attributes, and relationships are important for you. Start by describing your business as a real client. At least 12-15 entities are needed including their respective attributes and relationships. 
