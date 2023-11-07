@@ -495,3 +495,8 @@ HAVING AVG(payment) > (SELECT AVG(payment) FROM Sponsors);
 1 rows
 
 A manager would be interested in this information to determine which tournament had the highest amount of money from its sponsors. It would help them see which tournament was the biggest, most profitable event to these sponsors. This particular tournament had a group of teams that brought money in from some of the highest paying sponsors. 
+
+# Database Information
+The name of the database is : cs_g10p1
+
+Additional information: Each query created is marked in the database using stored procedures. The stored procedures can be called using the following format : CALL Q1();
