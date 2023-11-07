@@ -1,18 +1,42 @@
 
 # Team 10 MIST 4610 Project 1
 
-Problem Description:
+# Team Memebers:
+1. Liam Kilner @liamkilner
+2. Ashley Potts @ashley-potts
+3. Hayden Soley @HaydenSoley
+4. Emma Surbrook @emmasurbrook
+5. Victoria Wiest @victoriawiest
+
+# Problem Description:
 Pretend you are the owner/operator of a tennis (or football, soccer - your choice) club needing to build a relational database. You hired some students from the MIST 4610 class at the University of Georgia to create the database for you. They need to know more about your organization to identify which entities, attributes, and relationships are important for you. Start by describing your business as a real client. At least 12-15 entities are needed including their respective attributes and relationships. 
 
-Data Model:
+# Data Model:
 Our model is based on a Soccer Club, called UGA United Soccer Club. Our “Teams” table serves as our central entity, branching to many other tables throughout the model. “Teams” includes many important attributes, such as team name, age group, and practice schedules. Our “Teams” table has a one-to-many relationship, as well as a one-to-one relationship with our “Coaches” table. There are many coaches per team, with one being the head coach, shown by the one-to-one relationship. Our “Coaches” table gives important information about each coach, such as name, contact information, and coaching experience. Additionally, “Teams” links, as a one-to-many relationship, to “Registration”. There are many registrations per team. There is also one player per registration. Our “Registrations” entity as a one-to-one relationship with “Players”. This table includes information such as name, age, contact information, and emergency contacts. “Teams” continues its relationships by having a one-to-many relationship with “Sponsors”. Each team can have multiple sponsors, each of different levels and payments. There is also a one-to-many relationship between “Teams” and “Tournaments”. Each tournament is linked to multiple teams. This table includes important information such as the name, location, and date of the tournaments, as well as the winning team. Our “Tournaments” entity branches to “Facilities”, with multiple facilities as a part of each tournament. Our facilities offer different field conditions, such as turf or grass, and multiple fields within the facility. The “Facilities” entity also links to our “Staff” entity through a one-to-many relationship. Each facility has multiple staff members, where we can find information about their contact information and position. The “Tournaments” entity also links to another entity, “Matches”, through a one-to-many relationship. There are multiple games in each tournament, and also multiple referees in each match. This is shown by the “Matches” and “Referees” entities being connected with a one-to-many relationship. Our “Teams” entity connects to one more entity, “Practice Sessions”, through a one-to-many relationship since there are multiple practice sessions for each team. Since many facilities can have many practice sessions, there is an associative entity between “Practice Sessions” and “Facilities” called “Practice_Sessions_has_Facilities”. This shows which practice sessions are occurring at each facility. Our conversation with our client included three more entities, “Parents/Guardians”, “Payments”, and “Merchandise”, but we felt that it made more sense to include these as attributes in the other existing entities.
 
 
-
-Project Description : 
+# Project Description : 
 The current project is to create a relational database that models the general operations of a soccer club. The primary entity of the model is the Teams entity with the Teams representing each individual team that belongs to the UGA United Soccer Club. The Team entity has various relationships with other entities in the model such as Players, Coaches, Tournaments, etc. We are interested in accurately depicting these relationships and generating sample data to ensure that the goals of the database are achieved. Additionally, we plan to execute queries on the sample data to provide information that is relevant to the club from a managerial perspective.
 
-Queries:
+![unnamed](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/e4ee7ccf-d5b8-4f6d-b998-9454dd7b7361)
+# Data Dictionary
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/ddede0f3-a4a7-49c9-b7df-fda7d907d56e)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/54859646-2f9f-4121-9cac-f9b29b0159ae)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/2eaa4fe7-6db6-455e-a183-fb1f9b2ee301)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/034e6cf6-f14c-48be-b91a-c8ea6a6ec2a6)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/7b27b941-a953-4ab9-8697-c1b984305b37)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/44bbdea7-3cc1-4a41-8110-a91c9e83bc65)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/762a3e7c-4d6b-473e-895a-a43a198e9a0d)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/d1fbc0dd-d360-42bd-8d24-e703bb389275)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/ef245b5d-5161-4bac-9fd1-3c7449f43019)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/611c714d-91fd-4f41-b4e1-a94a9bf0032a)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/be515fb6-92a3-4ba8-9d89-75c74e0e8e51)
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/4353d0f0-3cad-4287-bc9f-ce81eccfe033)
+
+
+# Queries
+
+![image](https://github.com/HaydenSoley/MIST-4610-Project-1/assets/148247978/989006a0-bab3-4fe6-83b1-87bcd3d4ca79)
 
 1. Retrieve all players who have not suffered any injuries:
 This query lists the first name, last name, and team name of all the players who have not suffered any injuries.
